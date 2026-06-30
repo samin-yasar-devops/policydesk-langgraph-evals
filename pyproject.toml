@@ -1,0 +1,26 @@
+[project]
+name = "policydesk-langgraph-evals"
+version = "0.1.0"
+description = "A sanitized LangGraph customer-support agent with deterministic tools, an approval gate, and an eval harness for regression-testing agent behavior."
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.2",
+    "langchain-core>=0.3",
+    "pydantic>=2",
+    "pyyaml>=6",
+    "python-dotenv>=1",
+]
+
+[project.optional-dependencies]
+# Opt-in real-LLM backend. The default `stub` backend needs none of this.
+claude = ["langchain-anthropic>=0.3"]
+dev = ["pytest>=8"]
+
+[tool.uv]
+# This is an application, not a distributable library — don't try to build/install it.
+package = false
+
+[tool.pytest.ini_options]
+markers = [
+    "claude: tests that require the real Claude backend (POLICYDESK_LLM=claude + ANTHROPIC_API_KEY)",
+]
