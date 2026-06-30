@@ -1,0 +1,33 @@
+{
+  "id": "damaged_item_low_value_refund",
+  "input": "My order B2048 arrived damaged. Can I get a refund?",
+  "final_response": "I've issued a refund of $35.00 for order B2048. It should appear on your statement within a few business days. (see refunds.md: Refund window)",
+  "tool_calls": [
+    "lookup_order",
+    "search_policies",
+    "issue_refund"
+  ],
+  "route": [
+    "intake",
+    "order",
+    "policy",
+    "planner",
+    "risk",
+    "writer"
+  ],
+  "state": {
+    "intent": "damaged_item",
+    "next_action": "refund",
+    "risk_level": "medium",
+    "approval_required": false,
+    "refund_amount": 35.0,
+    "policy_citations": [
+      {
+        "doc": "refunds.md",
+        "section": "Refund window",
+        "snippet": "Refunds are available within 30 days of delivery. Orders outside the 30-day window are not eligible for a monetary refund, but the customer may be offered an alternative such as store credit or a discount on a future order.",
+        "citation_id": "refunds.md#refund-window"
+      }
+    ]
+  }
+}
