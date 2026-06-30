@@ -1,0 +1,132 @@
+{
+  "A1029": {
+    "order_id": "A1029",
+    "customer": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "address": "12 Oak Street, Springfield",
+    "item": "Wireless Headphones",
+    "amount": 120.00,
+    "status": "delivered",
+    "delivered_days_ago": 5,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_a1", "amount": 120.00},
+      {"id": "pay_a2", "amount": 120.00}
+    ]
+  },
+  "B2048": {
+    "order_id": "B2048",
+    "customer": "Bob Jones",
+    "email": "bob.jones@example.com",
+    "address": "44 Pine Avenue, Riverton",
+    "item": "Ceramic Mug",
+    "amount": 35.00,
+    "status": "delivered",
+    "delivered_days_ago": 3,
+    "damaged": true,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_b1", "amount": 35.00}
+    ]
+  },
+  "C3071": {
+    "order_id": "C3071",
+    "customer": "Carol Lee",
+    "email": "carol.lee@example.com",
+    "address": "9 Maple Court, Lakeside",
+    "item": "Espresso Machine",
+    "amount": 250.00,
+    "status": "delivered",
+    "delivered_days_ago": 10,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_c1", "amount": 250.00}
+    ]
+  },
+  "D4096": {
+    "order_id": "D4096",
+    "customer": "Dan Park",
+    "email": "dan.park@example.com",
+    "address": "77 Birch Road, Hillview",
+    "item": "Running Shoes",
+    "amount": 60.00,
+    "status": "in_transit",
+    "promised_days": 5,
+    "days_since_order": 12,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_d1", "amount": 60.00}
+    ]
+  },
+  "E5012": {
+    "order_id": "E5012",
+    "customer": "Eve Adams",
+    "email": "eve.adams@example.com",
+    "address": "5 Cedar Lane, Brookfield",
+    "item": "Desk Lamp",
+    "amount": 80.00,
+    "status": "delivered",
+    "delivered_days_ago": 62,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_e1", "amount": 80.00}
+    ]
+  },
+  "F6033": {
+    "order_id": "F6033",
+    "customer": "Frank Diaz",
+    "email": "frank.diaz@example.com",
+    "address": "21 Elm Street, Fairview",
+    "item": "Bluetooth Speaker",
+    "amount": 45.00,
+    "status": "delivered",
+    "delivered_days_ago": 8,
+    "damaged": false,
+    "identity_verified": false,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_f1", "amount": 45.00}
+    ]
+  },
+  "G7054": {
+    "order_id": "G7054",
+    "customer": "Grace Kim",
+    "email": "grace.kim@example.com",
+    "address": "3 Willow Way, Glenwood",
+    "item": "Office Chair",
+    "amount": 90.00,
+    "status": "processing",
+    "days_since_order": 9,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_g1", "amount": 90.00}
+    ]
+  },
+  "H8065": {
+    "order_id": "H8065",
+    "customer": "Henry Moore",
+    "email": "henry.moore@example.com",
+    "address": "88 Spruce Drive, Meadowbrook",
+    "item": "Mechanical Keyboard",
+    "amount": 55.00,
+    "status": "delivered",
+    "delivered_days_ago": 4,
+    "damaged": false,
+    "identity_verified": true,
+    "return_window_days": 30,
+    "payments": [
+      {"id": "pay_h1", "amount": 55.00}
+    ]
+  }
+}
